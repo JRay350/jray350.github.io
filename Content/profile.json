@@ -23,7 +23,7 @@
   "Role": "Computer Science Lab Assistant",
   "EmploymentText": "Use this to add some narrative to your employment section",
   "Skills": ["C", " C++", " Python", " Verilog", " Multisim"," MATLAB", " Quartus", " Oscilloscopes"],
-  "SkillsText": "Actively working on learning about RTOS and embedded linux!",
+  "SkillsText": "",
   "Resume": "student-resume.pdf"  
 },
 "Project1": {
