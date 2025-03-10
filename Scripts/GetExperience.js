@@ -23,10 +23,12 @@ function updateHTML(configData) {
   document.querySelector("#pfGraduation").innerHTML = configData.Experience.Graduation;
   document.querySelector("#pfEducationText").innerHTML = configData.Experience.EducationText;
 
+  /*
   document.querySelector("#expEmp>h2").innerHTML = "Employment";
   document.querySelector("#pfEmployment").innerHTML = configData.Experience.Employment;
   document.querySelector("#pfRole").innerHTML = configData.Experience.Role;
   document.querySelector("#pfEmploymentText").innerHTML = configData.Experience.EmploymentText;
+  */
 
   document.querySelector("#expSkills>h2").innerHTML = "Skills";
   document.querySelector("#pfSkills").innerHTML = configData.Experience.Skills.toString();
