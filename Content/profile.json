@@ -2,7 +2,7 @@
 "About": {
   "Name": "Jacob Ray",
   "Currently": "Computer Engineering Student",
-  "Headshot": "student-portrait.png",
+  "Headshot": "student-portrait.jpg",
   "Thumbnail": "student-logo.webp",
   "AboutText": "Hi, I am Jacob Ray. I am a  computer engineering student with a deep interest in embedded systems. Currently, I am pursuing my undergraduate degree at Seattle Pacific University. I am actively expanding my knowledge and skills as I continually explore my interests, including embedded linux and real-time embedded systems.<br><br>I enjoy learning and am fascinated by technology and the ways in which we are applying it to all sorts of purposes."
 },
@@ -14,15 +14,15 @@
   "GitHub": "https://github.com/JRay350"
 },
 "Experience": {
-  "ExperienceText": "Use this area to explain how you got to where you are and what you are currently doing now.<br><br>This is a good spot to talk yourself up.",
+  "ExperienceText": "I'm currently pursuing my studies and exploring my interests, including embedded systems and FPGAs for digital design, in my spare time.",
   "School": "Seattle Pacific University",
   "Major": "Computer Engineering",
   "Graduation": "June 2026",
-  "EducationText": "Use this to add some narrative to your education section",
+  "EducationText": "3.99 GPA",
   "Employment": "Seattle Pacific University",
   "Role": "Computer Science Lab Assistant",
   "EmploymentText": "Use this to add some narrative to your employment section",
-  "Skills": ["C++", " JavaScript", " Node", " CSS"," HTML"],
+  "Skills": ["C", " C++", " Python", " Verilog", " Multisim"," MATLAB", " Quartus", " Oscilloscopes"],
   "SkillsText": "Use this to add some narrative to your skills section",
   "Resume": "student-resume.pdf"  
 },
