@@ -23,15 +23,15 @@
   "Role": "Computer Science Lab Assistant",
   "EmploymentText": "Use this to add some narrative to your employment section",
   "Skills": ["C", " C++", " Python", " Verilog", " Multisim"," MATLAB", " Quartus", " Oscilloscopes"],
-  "SkillsText": "Use this to add some narrative to your skills section",
+  "SkillsText": "",
   "Resume": "student-resume.pdf"  
 },
 "Project1": {
-    "Title": "Interesting Project 1",
-    "Desc": "This is a description of Project One.<br><br>It has a GitHub repo and more details shown in screenshots.",
-    "GitHubRepo": "https://github.com",
-    "MainImage": "P1Main.png",
-    "DetailImages": ["P1Detail1.png","P1Detail2.png","P1Detail3.png"]
+    "Title": "Sallen Key Bandpass Filter Indicator",
+    "Desc": "In this project, I designed and optimized a 4th-order Sallen-Key bandpass filter for an IR system, tuned to 17 kHz with at least -12 dB attenuation at 10 kHz and 25 kHz. I first derived a filter based on a transfer function tested in MATLAB, before subsequently simulating in Multisim with an AC sweep and building the filter. From there, I utilized the digital oscilloscopes FRA to test my physical circuit. Afterwards, I integrated a peak detector and comparator to detect passing signals and to trigger an LED indicator that would only pass when the input has the correct frequency. I validated each step of the process with osilloscope analysis, ensuring that the results are what I expected.",
+    "GitHubRepo": "",
+    "MainImage": "Circuit.png",
+    "DetailImages": ["Circuit.png","FRA.png"]
   },
   "Project2": {
     "Title": "Interesting Project 2",
@@ -40,18 +40,4 @@
     "MainImage": "P2Main.png",
     "DetailImages": ["P2Detail1.png","P2Detail2.png","P2Detail3.png","P2Detail4.png"]
   },
-  "Project3": {
-    "Title": "Interesting Project 3",
-    "Desc": "This is a description of Project Three.<br><br>It does not have a GitHub repo or any additional screenshots.",
-    "GitHubRepo": "",
-    "MainImage": "P3Main.png",
-    "DetailImages": []
-  },
-  "Project4": {
-    "Title": "",
-    "Desc": "",
-    "GitHubRepo": "",
-    "MainImage": "",
-    "DetailImages": []
-  }
 }
