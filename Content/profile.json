@@ -30,8 +30,8 @@
     "Title": "Sallen Key Bandpass Filter Indicator",
     "Desc": "In this project, I designed and optimized a 4th-order Sallen-Key bandpass filter for an IR system, tuned to 17 kHz with at least -12 dB attenuation at 10 kHz and 25 kHz. I first derived a filter based on a transfer function tested in MATLAB, before subsequently simulating in Multisim with an AC sweep and building the filter. From there, I utilized the digital oscilloscopes FRA to test my physical circuit. Afterwards, I integrated a peak detector and comparator to detect passing signals and to trigger an LED indicator that would only pass when the input has the correct frequency. I validated each step of the process with osilloscope analysis, ensuring that the results are what I expected.",
     "GitHubRepo": "",
-    "MainImage": "Circuit.png",
-    "DetailImages": ["Circuit.png","FRA.png"]
+    "MainImage": "Circuit.jpg",
+    "DetailImages": ["Circuit.jpg","FRA.png"]
   },
   "Project2": {
     "Title": "Interesting Project 2",
