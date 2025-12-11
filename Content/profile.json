@@ -35,7 +35,7 @@
   },
 "Project2": {
     "Title": "PLC Cleaner - Junior Design Project",
-    "Desc": "The PLC Cleaner is a wet-dry vaccuum developed by a team of 4 engineers. Its strong suction and wet-dry capabilites are comparable to other cleaners on the market. My role was the development of the software, written in C, that controlled the system. This involved managing the cleaning cycles through the programming of a RP2040 MCU, including controlling which components were active and the user controls. FreeRTOS was utilized for concurrency and to meet strict timing requirements. I also assisted in the assembly of the AC/DC rectifier that was used to convert our 120V AC wall power source to a usable 5V DC for the MCU.",
+    "Desc": "The PLC Cleaner is a wet-dry vaccuum developed by a team of 4 engineers. Its strong suction and wet-dry capabilites are comparable to other cleaners on the market. My role was the development of the software, written in C, that controlled the system. This involved managing the cleaning cycles through the programming of a RP2040 MCU, including controlling which components were active via relays and the user controls. FreeRTOS was utilized for concurrency and to meet strict timing requirements. I also assisted in the assembly of the AC/DC rectifier that was used to convert our 120V AC wall power source to a usable 5V DC for the MCU.",
     "GitHubRepo": "https://github.com/JRay350/plc-cleaner",
     "MainImage": "plc-cleaner.jpg",
     "DetailImages": ["plc-cleaner.jpg","plc-cleaner2.jpg"]
