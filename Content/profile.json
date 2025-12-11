@@ -22,7 +22,7 @@
   "Employment": "Seattle Pacific University",
   "Role": "Computer Science Lab Assistant",
   "EmploymentText": "Use this to add some narrative to your employment section",
-  "Skills": ["C", " C++", " Python", " Verilog", " Multisim"," MATLAB", " Quartus", " Oscilloscopes"],
+  "Skills": ["C", " C++", " Python", " Golang", " Verilog", " Multisim"," MATLAB", " Quartus", " Oscilloscopes"],
   "SkillsText": "",
   "Resume": "student-resume.pdf"  
 },
