@@ -1,14 +1,14 @@
 {
 "About": {
   "Name": "Jacob Ray",
-  "Currently": "Computer Engineering Student",
+  "Currently": "Computer Engineering Student (Graduating June 2026)",
   "Headshot": "student-portrait.jpg",
   "Thumbnail": "student-logo.webp",
-  "AboutText": "Hi, I am Jacob Ray. I am a  computer engineering student with a deep interest in embedded systems. Currently, I am pursuing my undergraduate degree at Seattle Pacific University. I am actively expanding my knowledge and skills as I continually explore my interests, including embedded linux and real-time embedded systems.<br><br>I enjoy learning and am fascinated by technology and the ways in which we are applying it to all sorts of purposes."
+  "AboutText": "Hi, I am Jacob Ray. I am a computer engineering student with a deep interest in embedded systems and web based software. Currently, I am pursuing my undergraduate degree at Seattle Pacific University in Computer Engineering. I have experience in circuit design, PCB design, embedded systems software development, web application development, and FPGA development. I am actively expanding my knowledge and skills as I continually explore my interests, including embedded linux and real-time embedded systems. I have strong communication and writing skills. In my free time, I enjoy the outdoors."
 },
 "Contact": {
   "EMail": "rayj1@spu.edu",
-  "Phone": "(206) 496-9796",
+  "Phone": "",
   "Portfolio": "https://github.com/JRay350",
   "LinkedIn": "https://www.linkedin.com/in/jacob-ray-231a492bb/",
   "GitHub": "https://github.com/JRay350"
