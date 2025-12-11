@@ -1,182 +1,152 @@
 import { ConfigSingleton } from "./GetProfile.js";
 
 let configData;
-let slideIdx = 1;
 
-// Make sure DOM is ready before touching it
-document.addEventListener("DOMContentLoaded", async () => {
+(async () => {
   try {
-    const configInstance = await ConfigSingleton.getInstance();
-    configData = configInstance.getConfig();
-    // Debug: make sure we really see 4 projects
-    console.log("Config data:", configData);
-
-    updateHTML(configData);
-    initCarouselHandlers();
-    initModalHandlers();
-  } catch (error) {
-    console.error("Error loading config:", error);
-  }
-});
-
-function updateHTML(configData) {
-  if (!configData) return;
-
-  // ---- ABOUT / CONTACT ----
-  const about = configData.About || {};
-  const contact = configData.Contact || {};
-
-  const pfThumbnail = document.querySelector("#pfThumbnail");
-  if (pfThumbnail && about.Thumbnail) {
-    pfThumbnail.src = "Content/" + about.Thumbnail;
-  }
-
-  const pfLinkedIn = document.querySelector("#pfLinkedIn");
-  if (pfLinkedIn && contact.LinkedIn) {
-    pfLinkedIn.href = contact.LinkedIn;
-  }
-
-  const pfGitHub = document.querySelector("#pfGitHub");
-  if (pfGitHub && contact.GitHub) {
-    pfGitHub.href = contact.GitHub;
-  }
-
-  // ---- PROJECTS 1–4 ----
-  updateProjectUI(configData.Project1, 1);
-  updateProjectUI(configData.Project2, 2);
-  updateProjectUI(configData.Project3, 3);
-  updateProjectUI(configData.Project4, 4);
-}
-
-function updateProjectUI(project, idx) {
-  const projectContainer = document.querySelector(`#project${idx}`);
-  if (!projectContainer) {
-    // If the HTML doesn't have this section, just skip it
-    return;
-  }
-
-  if (!project || !project.Title) {
-    // If there is no data for this project, hide the block
-    projectContainer.style.display = "none";
-    return;
-  }
-
-  const img      = document.querySelector(`#pfProject${idx}Img`);
-  const titleEl  = document.querySelector(`#pfProject${idx}Title`);
-  const descEl   = document.querySelector(`#pfProject${idx}Desc`);
-  const repoEl   = document.querySelector(`#pfProject${idx}Repo`);
-  const openBtn  = document.querySelector(`#openProject${idx}`);
-
-  if (img && project.MainImage) {
-    img.src = "Content/" + project.MainImage;
-  }
-
-  if (titleEl) {
-    titleEl.innerHTML = project.Title;
-  }
-
-  if (descEl && project.Desc) {
-    descEl.innerHTML = project.Desc;
-  }
-
-  if (repoEl) {
-    if (project.GitHubRepo) {
-      repoEl.href = project.GitHubRepo;
-      repoEl.style.display = "";
-    } else {
-      // Hide repo link when there’s no GitHub URL
-      repoEl.style.display = "none";
+      const configInstance = await ConfigSingleton.getInstance();
+      configData = configInstance.getConfig();
+      updateHTML(configData);
+    } catch (error) {
+      console.error('Error:', error);
     }
+  })();
+  
+function updateHTML(configData) {
+  let projectTitle;
+
+  document.querySelector("#pfThumbnail").src = "Content/".concat(configData.About.Thumbnail);
+  document.querySelector("#pfLinkedIn").href = configData.Contact.LinkedIn;
+  document.querySelector("#pfGitHub").href = configData.Contact.GitHub;
+  
+  projectTitle = configData.Project1.Title;
+  if (projectTitle) {
+    document.querySelector("#pfProject1Img").src = "Content/".concat(configData.Project1.MainImage);
+    document.querySelector("#pfProject1Title").innerHTML = projectTitle;
+    document.querySelector("#pfProject1Desc").innerHTML = configData.Project1.Desc;
+    document.querySelector("#pfProject1Repo").href = configData.Project1.GitHubRepo;
+    if (!configData.Project1.GitHubRepo) {
+      document.querySelector("#pfProject1Repo").style.display = "none";
+    }
+    if (configData.Project1.DetailImages.length<1) {
+      document.querySelector("#openProject1").style.display = "none";
+    }
+  } else {
+    document.querySelector("#project1").style.display = "none";
+  }
+  
+  projectTitle = configData.Project2.Title;
+  if (projectTitle) {
+    document.querySelector("#pfProject2Img").src = "Content/".concat(configData.Project2.MainImage);
+    document.querySelector("#pfProject2Title").innerHTML = projectTitle;
+    document.querySelector("#pfProject2Desc").innerHTML = configData.Project2.Desc;
+    document.querySelector("#pfProject2Repo").href = configData.Project2.GitHubRepo;
+    if (!configData.Project2.GitHubRepo) {
+      document.querySelector("#pfProject2Repo").style.display = "none";
+    }
+    if (configData.Project2.DetailImages.length<1) {
+      document.querySelector("#openProject2").style.display = "none";
+    }
+  } else {
+    document.querySelector("#project2").style.display = "none";
   }
 
-  const hasDetailImages =
-    Array.isArray(project.DetailImages) && project.DetailImages.length > 0;
-
-  if (openBtn) {
-    openBtn.style.display = hasDetailImages ? "" : "none";
+  projectTitle = configData.Project3.Title;
+  if (projectTitle) {
+    document.querySelector("#pfProject3Img").src = "Content/".concat(configData.Project3.MainImage);
+    document.querySelector("#pfProject3Title").innerHTML = projectTitle;
+    document.querySelector("#pfProject3Desc").innerHTML = configData.Project3.Desc;
+    document.querySelector("#pfProject3Repo").href = configData.Project3.GitHubRepo;
+    if (!configData.Project3.GitHubRepo) {
+      document.querySelector("#pfProject3Repo").style.display = "none";
+    }
+    if (configData.Project3.DetailImages.length<1) {
+      document.querySelector("#openProject3").style.display = "none";
+    }
+  } else {
+    document.querySelector("#project3").style.display = "none";
   }
-
-  // Make sure the project container itself is visible
-  projectContainer.style.display = "";
+  
+  projectTitle = configData.Project4.Title;
+  if (projectTitle) {
+    document.querySelector("#pfProject4Img").src = "Content/".concat(configData.Project4.MainImage);
+    document.querySelector("#pfProject4Title").innerHTML = projectTitle;
+    document.querySelector("#pfProject4Desc").innerHTML = configData.Project4.Desc;
+    document.querySelector("#pfProject4Repo").href = configData.Project4.GitHubRepo;
+    if (!configData.Project4.GitHubRepo) {
+      document.querySelector("#pfProject4Repo").style.display = "none";
+    }
+    if (configData.Project4.DetailImages.length<1) {
+      document.querySelector("#openProject4").style.display = "none";
+    }
+  } else {
+    document.querySelector("#project4").style.display = "none";
+  }
 }
-
-/* ---------- IMAGE LIST & CAROUSEL ---------- */
 
 function addImages(imgs) {
-  const il = document.querySelector("#imgList");
-  if (!il) return;
+  // First remove any existing images
+  let il = document.querySelector("#imgList");
+  while(il.firstChild) il.removeChild(il.firstChild);
 
-  while (il.firstChild) il.removeChild(il.firstChild);
-  if (!Array.isArray(imgs)) return;
-
-  imgs.forEach(src => addListItem(src));
-
-  slideIdx = 1;
-  showImages(slideIdx);
+  // Then add them in from the profile
+  for (let i = 0; i < imgs.length; i++) {
+    addListItem(imgs[i])
+  }
 }
 
 function addListItem(newImg) {
-  const il = document.querySelector("#imgList");
-  if (!il) return;
-
   const newElem = document.createElement("img");
-  newElem.setAttribute("src", "Content/" + newImg);
+  newElem.setAttribute("src", "Content/".concat(newImg));
+  const il = document.querySelector("#imgList");
   il.appendChild(newElem);
 }
 
-function initCarouselHandlers() {
-  const nextBtn = document.querySelector("#next");
-  const prevBtn = document.querySelector("#prev");
+/* Handle the Carousel */
+let slideIdx = 1;
 
-  if (nextBtn) {
-    nextBtn.onclick = () => showImages(++slideIdx);
-  }
-  if (prevBtn) {
-    prevBtn.onclick = () => showImages(--slideIdx);
-  }
+document.querySelector("#next").onclick = () => {
+  showImages(++slideIdx);
+}
+
+document.querySelector("#prev").onclick = () => {
+  showImages(--slideIdx);
 }
 
 function showImages(n) {
-  const slides = document.querySelectorAll("#imgList > img");
-  if (!slides || slides.length === 0) return;
-
-  if (n > slides.length) slideIdx = 1;
-  if (n < 1) slideIdx = slides.length;
-
-  slides.forEach(slide => (slide.style.display = "none"));
+  const slides = document.querySelectorAll("#imgList>img");
+  if (n > slides.length) { slideIdx = 1 }
+  if (n < 1) { slideIdx = slides.length }
+  for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
   slides[slideIdx - 1].style.display = "block";
 }
 
-/* ---------- MODAL HANDLERS ---------- */
+document.querySelector("#openProject1").onclick = () => {
+  addImages(configData.Project1.DetailImages);
+  document.querySelector("#modalPage").style.display = "block";
+  showImages(slideIdx);
+}
 
-function initModalHandlers() {
-  const modal = document.querySelector("#modalPage");
-  const xOut  = document.querySelector("#XOut");
+document.querySelector("#openProject2").onclick = () => {
+  addImages(configData.Project2.DetailImages);
+  document.querySelector("#modalPage").style.display = "block";
+  showImages(slideIdx);
+}
 
-  for (let i = 1; i <= 4; i++) {
-    const openBtn = document.querySelector(`#openProject${i}`);
-    if (!openBtn) continue;
+document.querySelector("#openProject3").onclick = () => {
+  addImages(configData.Project3.DetailImages);
+  document.querySelector("#modalPage").style.display = "block";
+  showImages(slideIdx);
+}
 
-    openBtn.onclick = () => {
-      if (!configData) return;
+document.querySelector("#XOut").onclick = () => {
+  document.querySelector("#modalPage").style.display = "none";
+}
 
-      const project = configData[`Project${i}`];
-      if (!project || !Array.isArray(project.DetailImages)) return;
-
-      addImages(project.DetailImages);
-      if (modal) modal.style.display = "block";
-    };
+window.onclick = (event) => {
+  if (event.target == document.querySelector("#modalPage")) {
+      document.querySelector("#modalPage").style.display = "none";
   }
-
-  if (xOut && modal) {
-    xOut.onclick = () => {
-      modal.style.display = "none";
-    };
-  }
-
-  window.onclick = (event) => {
-    if (modal && event.target === modal) {
-      modal.style.display = "none";
-    }
-  };
 }
