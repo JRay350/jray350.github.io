@@ -49,7 +49,7 @@
   },
   "Project4": {
     "Title": "AI Cat Feeder System (April 2024 - June 2024)",
-    "Desc": "Developed a low-power AI system, leveraging Python and TensorFlow Lite on Raspberry Pi 4 with custom 3D-printed housing. This project served to eliminate unwanted wildlife feeding and food waste by engineering an intelligent detection system and training a quantized CNN (Convolutional Neural Network) model, achieving 84.2% precision in real-time classification between cats and raccoons using computer vision. For the project, I designed real-time user feedback by spearheading cross-functional development of fail-safe hardware interfaces, implementing stepper motor control, LED indicators, OLED display drivers, and system reset protocols.",
+    "Desc": "In a team of engineers, I developed a low-power AI system, leveraging Python and TensorFlow Lite on Raspberry Pi 4 with custom 3D-printed housing. This project served to eliminate unwanted wildlife feeding and food waste by engineering an intelligent detection system and training a quantized CNN (Convolutional Neural Network) model, achieving 84.2% precision in real-time classification between cats and raccoons using computer vision. For my role, I designed real-time user feedback by spearheading cross-functional development of fail-safe hardware interfaces, implementing stepper motor control, LED indicators, OLED display drivers, and system reset protocols. I also curated the data for the transfer learning of our image recognition model.",
     "GitHubRepo": "https://github.com/JRay350/Cat-Feeder",
     "MainImage": "3DHouse.jpg",
     "DetailImages": ["3DHouse.jpg", "LED.jpg", "3DHouse2.jpg"]
