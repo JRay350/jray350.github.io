@@ -21,7 +21,7 @@
   "EducationText": "3.97 GPA",
   "Employment": "Axon Enterprise",
   "Role": "Software Engineer Intern",
-  "EmploymentText": "Over summer 2025, I developed an AI-powered cloud feature for the newly released ABW Mini Body-Cam that lets users seamlessly generate custom designs for the device’s 7×9 front-facing LED matrix, used to display brand imagery and logos.",
+  "EmploymentText": "Over summer 2025, I developed an AI-powered cloud feature for the newly released ABW Mini Body Cam that lets users seamlessly generate custom designs for the device’s 7×9 front-facing LED matrix, used to display brand imagery and logos.",
   "Skills": ["C", " C++", " Python", " Golang", " Verilog", " Multisim"," MATLAB", " Quartus", " Oscilloscopes"],
   "SkillsText": "",
   "Resume": "student-resume.pdf"  
