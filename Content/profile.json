@@ -27,28 +27,28 @@
   "Resume": "student-resume.pdf"  
 },
 "Project1": {
-    "Title": "Wayfinder - Senior Design Project",
+    "Title": "Wayfinder - Senior Design Project (October 2025 - Present)",
     "Desc": "Wayfinder is a compact, low-power watch suitable for mountaineering usage and day-to-day life. Built by a team of 5 engineers, it utilizes sensors for altitude, temperature, and incline on a custom PCB. It also comes with a digital compass and LCD display. My role is was selecting the MCU according to our power constraints and designing the MCU relevant aspects of the PCB. I am developing the software, written in C, that controls the system, utilizing an STM32L051C6 MCU to process sensor data and write an interface to an LCD screen that the user can read from and control the system with. It is currently a work-in-progress.",
     "GitHubRepo": "https://github.com/JRay350/Wayfinder",
     "MainImage": "wayfinder.jpg",
     "DetailImages": ["wayfinder.jpg","wayfinder2.jpg"]
   },
 "Project2": {
-    "Title": "PLC Cleaner - Junior Design Project",
+    "Title": "PLC Cleaner - Junior Design Project (March 2025 - June 2025)",
     "Desc": "The PLC Cleaner is a wet-dry vaccuum developed by a team of 4 engineers. Its strong suction and wet-dry capabilites are comparable to other cleaners on the market. My role was the development of the software, written in C, that controlled the system. This involved managing the cleaning cycles through the programming of a RP2040 MCU, including controlling which components were active via relays and the user controls. FreeRTOS was utilized for concurrency and to meet strict timing requirements. I also assisted in the assembly of the AC/DC rectifier that was used to convert our 120V AC wall power source to a usable 5V DC for the MCU.",
     "GitHubRepo": "https://github.com/JRay350/plc-cleaner",
     "MainImage": "plc-cleaner.jpg",
     "DetailImages": ["plc-cleaner.jpg","plc-cleaner2.jpg"]
   },
 "Project3": {
-    "Title": "Sallen Key Bandpass Filter Indicator",
+    "Title": "Sallen Key Bandpass Filter Indicator (February 2025 - March 2025)",
     "Desc": "In this project, I designed and optimized a 4th-order Sallen-Key bandpass filter for an IR system, tuned to 17 kHz with at least -12 dB attenuation at 10 kHz and 25 kHz. I first derived a filter based on a transfer function tested in MATLAB, before subsequently simulating in Multisim with an AC sweep and building the filter. From there, I utilized the digital oscilloscopes FRA to test my physical circuit. Afterwards, I integrated a peak detector and comparator to detect passing signals and to trigger an LED indicator that would only pass when the input has the correct frequency. I validated each step of the process with osilloscope analysis, ensuring that the results are what I expected.",
     "GitHubRepo": "",
     "MainImage": "Circuit.jpg",
     "DetailImages": ["Circuit.jpg","FRA.png"]
   },
   "Project4": {
-    "Title": "AI Cat Feeder System",
+    "Title": "AI Cat Feeder System (April 2024 - June 2024)",
     "Desc": "Developed a low-power AI system, leveraging Python and TensorFlow Lite on Raspberry Pi 4 with custom 3D-printed housing. This project served to eliminate unwanted wildlife feeding and food waste by engineering an intelligent detection system and training a quantized CNN (Convolutional Neural Network) model, achieving 84.2% precision in real-time classification between cats and raccoons using computer vision. For the project, I designed real-time user feedback by spearheading cross-functional development of fail-safe hardware interfaces, implementing stepper motor control, LED indicators, OLED display drivers, and system reset protocols.",
     "GitHubRepo": "https://github.com/JRay350/Cat-Feeder",
     "MainImage": "3DHouse.jpg",
