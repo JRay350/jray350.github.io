@@ -14,15 +14,15 @@
   "GitHub": "https://github.com/JRay350"
 },
 "Experience": {
-  "ExperienceText": "I'm currently pursuing my studies and exploring my interests, including RTOS in embedded systems, Linux-based embedded development, and FPGAs for digital design in my spare time.",
+  "ExperienceText": "",
   "School": "Seattle Pacific University",
   "Major": "Computer Engineering",
   "Graduation": "June 2026",
   "EducationText": "3.97 GPA",
   "Employment": "Axon Enterprise",
-  "Role": "Software Engineer Intern",
-  "EmploymentText": "Over summer 2025, I developed an AI-powered cloud feature for the newly released ABW Mini Body Cam that lets users seamlessly generate custom designs for the device’s 7×9 front-facing LED matrix, used to display brand imagery and logos.",
-  "Skills": ["C", " C++", " Python", " Golang", " Verilog", " Multisim"," MATLAB", " Quartus", " Oscilloscopes"],
+  "Role": "Software Engineer Intern (June 2026 - August 2026)",
+  "EmploymentText": "As a Softwware Engineer Intern in the Enterprise org, I developed an AI-powered cloud feature for the newly released ABW Mini Body Cam that lets users seamlessly generate custom designs for the device’s 7×9 front-facing LED matrix, used to display brand imagery and logos. For this, I did full-stack development using Go for the backend and React.ts to build a streamlined frontend. I implemented end-to-end integration tests with Scala. I also delievered 4 presentations to a variety of audiences and wrote formal documentation for my project.",
+  "Skills": ["C", " C++", " Python", " Golang", " Verilog", " Multisim"," MATLAB", " Quartus", " Oscilloscopes", " Communication", " Problem-Solving", " Adaptability"],
   "SkillsText": "",
   "Resume": "student-resume.pdf"  
 },
